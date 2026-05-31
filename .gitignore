@@ -1,0 +1,10 @@
+# Local assignment/reference files
+Ödev İçeriği.PDF
+
+# Submission archives
+*.zip
+*.rar
+
+# OS/editor files
+.DS_Store
+Thumbs.db

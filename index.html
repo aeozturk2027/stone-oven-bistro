@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stone Oven Bistro Project Landing Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #211815;
+      --muted: #6a5147;
+      --paper: #fff8ea;
+      --line: #e2c9aa;
+      --tomato: #c8352b;
+      --teal: #23756f;
+      --gold: #e9ad3c;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, Arial, sans-serif;
+      color: var(--ink);
+      background: #f6efe2;
+      line-height: 1.6;
+    }
+
+    header {
+      min-height: 54vh;
+      display: grid;
+      align-items: center;
+      background:
+        linear-gradient(90deg, rgba(33, 24, 21, 0.78), rgba(33, 24, 21, 0.2)),
+        url("assets/burger-pizza.svg") center / cover no-repeat;
+      color: white;
+      padding: 48px 7vw;
+    }
+
+    header h1 {
+      font-size: clamp(2.2rem, 6vw, 5.5rem);
+      line-height: 1;
+      max-width: 920px;
+      margin: 0 0 18px;
+      letter-spacing: 0;
+    }
+
+    header p {
+      max-width: 720px;
+      font-size: 1.1rem;
+      margin: 0;
+    }
+
+    main {
+      width: min(1120px, 92vw);
+      margin: 0 auto;
+      padding: 34px 0 56px;
+    }
+
+    section {
+      margin-top: 28px;
+    }
+
+    h2 {
+      font-size: 1.45rem;
+      margin: 0 0 14px;
+    }
+
+    .project-info {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 14px;
+    }
+
+    .info-card,
+    .stage-card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+    }
+
+    .info-card strong {
+      display: block;
+      color: var(--tomato);
+    }
+
+    .member-list {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .deployment-note {
+      margin: 0;
+    }
+
+    .stage-list {
+      display: grid;
+      gap: 16px;
+    }
+
+    .stage-card h3 {
+      margin: 0 0 10px;
+      font-size: 1.12rem;
+    }
+
+    .stage-card h3 a {
+      color: var(--teal);
+      text-decoration-thickness: 2px;
+    }
+
+    .stage-card ul {
+      margin: 0;
+      padding-left: 22px;
+    }
+
+    .stage-card a {
+      color: var(--tomato);
+      font-weight: 700;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      padding-top: 22px;
+      margin-top: 34px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Stone Oven Bistro</h1>
+      <p>A restaurant website project for a burger and pizza ordering business, showing the page evolution from HTML skeleton to JavaScript-powered cart interaction.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="project-info" aria-labelledby="project-title">
+      <div class="info-card">
+        <strong id="project-title">Group</strong>
+        Group 3
+      </div>
+      <div class="info-card">
+        <strong>Group Members</strong>
+        <ul class="member-list">
+          <li>22023606 - Muhammed Yusuf Özden</li>
+          <li>22023620 - Ahmet Emre Öztürk</li>
+          <li>22023621 - Batu Zoralioğlu</li>
+        </ul>
+      </div>
+      <div class="info-card">
+        <strong>Business Type</strong>
+        Fast-casual restaurant for hamburger and pizza orders
+      </div>
+      <div class="info-card">
+        <strong>Deployment</strong>
+        <p class="deployment-note">Stage 7 is prepared for GitHub Pages deployment. After publishing, the live website URL should be submitted with the project archive.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="stages-title">
+      <h2 id="stages-title">Project Stages and Newly Added Changes</h2>
+      <div class="stage-list">
+        <article class="stage-card">
+          <h3><a href="stage2/index.html">Stage 2: Skeleton (HTML Only)</a></h3>
+          <ul>
+            <li><a href="stage2/index.html#html-structure">HTML-only restaurant homepage structure was added.</a></li>
+            <li><a href="stage2/index.html#menu-table">Menu price table was added.</a></li>
+            <li><a href="stage2/index.html#restaurant-image">Restaurant image was added.</a></li>
+          </ul>
+        </article>
+
+        <article class="stage-card">
+          <h3><a href="stage3/index.html">Stage 3: Colors and Typography</a></h3>
+          <ul>
+            <li><a href="stage3/index.html#google-fonts">Google Fonts typography was added.</a></li>
+            <li><a href="stage3/index.html#icon-set">FontAwesome icons were added.</a></li>
+            <li><a href="stage3/index.html#color-typography">Color and typography CSS was added without margin or padding.</a></li>
+          </ul>
+        </article>
+
+        <article class="stage-card">
+          <h3><a href="stage4/index.html">Stage 4: Spacious Design</a></h3>
+          <ul>
+            <li><a href="stage4/index.html#box-model">Box model rules were added.</a></li>
+            <li><a href="stage4/index.html#spacing">Margin and padding were added for a spacious layout.</a></li>
+            <li><a href="stage4/index.html#borders">Borders and card-like sections were added.</a></li>
+          </ul>
+        </article>
+
+        <article class="stage-card">
+          <h3><a href="stage5/index.html">Stage 5: Modern Layout</a></h3>
+          <ul>
+            <li><a href="stage5/index.html#grid-layout">CSS Grid page layout was added.</a></li>
+            <li><a href="stage5/index.html#grid-menu">Menu items were placed in a grid.</a></li>
+            <li><a href="stage5/index.html#responsive-grid">Responsive grid behavior was added.</a></li>
+          </ul>
+        </article>
+
+        <article class="stage-card">
+          <h3><a href="stage6/index.html">Stage 6: Interaction and Dynamism</a></h3>
+          <ul>
+            <li><a href="stage6/index.html#product-selection">Product selection buttons were added.</a></li>
+            <li><a href="stage6/index.html#cart-total">Cart list and total price updates were added.</a></li>
+            <li><a href="stage6/index.html#dom-summary">DOM-based selected item summary was added.</a></li>
+          </ul>
+        </article>
+
+        <article class="stage-card">
+          <h3>Stage 7: GitHub Pages Deployment</h3>
+          <ul>
+            <li>The final project folder is ready to be uploaded to GitHub.</li>
+            <li>GitHub Pages should be enabled from the main branch and root folder.</li>
+            <li>The live website link should be checked before submission to avoid broken links.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      <p>IST4130 project landing page. All stages are reachable through clear anchor links.</p>
+    </footer>
+  </main>
+</body>
+</html>

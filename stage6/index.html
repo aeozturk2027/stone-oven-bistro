@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stage 6 - Stone Oven Bistro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div>
+      <h1><i class="fa-solid fa-burger"></i> Stone Oven Bistro</h1>
+      <p>Build a burger and pizza order. Click a product to add it to the cart and update the total price through DOM manipulation.</p>
+    </div>
+    <nav>
+      <a href="../index.html"><i class="fa-solid fa-house"></i> Landing Page</a>
+      <a href="#product-selection"><i class="fa-solid fa-utensils"></i> Order</a>
+      <a href="#cart-total"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+      <a href="#contact"><i class="fa-solid fa-phone"></i> Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div>
+        <h2>Interactive Restaurant Ordering</h2>
+        <p>Stage 6 keeps the CSS Grid layout and adds JavaScript behavior for product selection, cart listing, and automatic total calculation.</p>
+      </div>
+      <img src="../assets/burger-pizza.svg" alt="Burger and pizza restaurant counter">
+    </section>
+
+    <section class="ordering-layout">
+      <div id="product-selection">
+        <h2><i class="fa-solid fa-pizza-slice"></i> Select Products</h2>
+        <div class="menu-grid">
+          <article class="product-card">
+            <h3>Classic Burger</h3>
+            <p>Beef patty, lettuce, tomato, pickles, and house sauce.</p>
+            <strong>$8</strong>
+            <button type="button" data-name="Classic Burger" data-price="8">
+              <i class="fa-solid fa-plus"></i> Add
+            </button>
+          </article>
+          <article class="product-card">
+            <h3>Double Cheese Burger</h3>
+            <p>Two patties, cheddar, caramelized onion, and house sauce.</p>
+            <strong>$10</strong>
+            <button type="button" data-name="Double Cheese Burger" data-price="10">
+              <i class="fa-solid fa-plus"></i> Add
+            </button>
+          </article>
+          <article class="product-card">
+            <h3>Margherita Pizza</h3>
+            <p>Mozzarella, tomato sauce, basil, and olive oil.</p>
+            <strong>$11</strong>
+            <button type="button" data-name="Margherita Pizza" data-price="11">
+              <i class="fa-solid fa-plus"></i> Add
+            </button>
+          </article>
+          <article class="product-card">
+            <h3>Pepperoni Pizza</h3>
+            <p>Pepperoni, mozzarella, tomato sauce, and oregano.</p>
+            <strong>$13</strong>
+            <button type="button" data-name="Pepperoni Pizza" data-price="13">
+              <i class="fa-solid fa-plus"></i> Add
+            </button>
+          </article>
+          <article class="product-card">
+            <h3>Fries and Drink Combo</h3>
+            <p>Crispy fries served with a cold soft drink.</p>
+            <strong>$5</strong>
+            <button type="button" data-name="Fries and Drink Combo" data-price="5">
+              <i class="fa-solid fa-plus"></i> Add
+            </button>
+          </article>
+        </div>
+      </div>
+
+      <aside id="cart-total" class="cart-panel">
+        <h2><i class="fa-solid fa-cart-shopping"></i> Your Cart</h2>
+        <p id="dom-summary">No product selected yet.</p>
+        <ul id="cart-items"></ul>
+        <div class="total-row">
+          <span>Total</span>
+          <strong id="cart-total-price">$0</strong>
+        </div>
+        <button class="clear-button" type="button" id="clear-cart">
+          <i class="fa-solid fa-trash"></i> Clear Cart
+        </button>
+      </aside>
+    </section>
+
+    <section class="details-grid">
+      <article>
+        <h2><i class="fa-solid fa-clock"></i> Working Hours</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Opening</th>
+              <th>Closing</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monday - Friday</td>
+              <td>10:00</td>
+              <td>22:00</td>
+            </tr>
+            <tr>
+              <td>Saturday - Sunday</td>
+              <td>11:00</td>
+              <td>23:00</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+      <article id="contact">
+        <h2><i class="fa-solid fa-location-dot"></i> Contact</h2>
+        <p>Address: Central Avenue 41, Istanbul</p>
+        <p>Phone: +90 555 000 0000</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>Stage 6 adds JavaScript and DOM updates for product selection.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

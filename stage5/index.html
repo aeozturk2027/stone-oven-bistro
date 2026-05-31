@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stage 5 - Stone Oven Bistro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header id="grid-layout">
+    <div>
+      <h1><i class="fa-solid fa-burger"></i> Stone Oven Bistro</h1>
+      <p>Fresh hamburgers, hot pizzas, fries, and drinks prepared for quick restaurant orders.</p>
+    </div>
+    <nav>
+      <a href="../index.html"><i class="fa-solid fa-house"></i> Landing Page</a>
+      <a href="#grid-menu"><i class="fa-solid fa-utensils"></i> Menu</a>
+      <a href="#restaurant-image"><i class="fa-solid fa-image"></i> Image</a>
+      <a href="#contact"><i class="fa-solid fa-phone"></i> Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div>
+        <h2>Order Burgers and Pizza Fast</h2>
+        <p>Stone Oven Bistro is a small fast-casual restaurant focused on two customer favorites: burgers and pizzas. Customers can choose a main product, add a side, and complete a simple order.</p>
+      </div>
+      <img id="restaurant-image" src="../assets/burger-pizza.svg" alt="Burger and pizza restaurant counter">
+    </section>
+
+    <section id="grid-menu">
+      <h2><i class="fa-solid fa-pizza-slice"></i> Menu Grid</h2>
+      <div class="menu-grid" id="responsive-grid">
+        <article>
+          <h3>Classic Burger</h3>
+          <p>Beef patty, lettuce, tomato, pickles, and house sauce.</p>
+          <strong>$8</strong>
+        </article>
+        <article>
+          <h3>Double Cheese Burger</h3>
+          <p>Two patties, cheddar, caramelized onion, and house sauce.</p>
+          <strong>$10</strong>
+        </article>
+        <article>
+          <h3>Margherita Pizza</h3>
+          <p>Mozzarella, tomato sauce, basil, and olive oil.</p>
+          <strong>$11</strong>
+        </article>
+        <article>
+          <h3>Pepperoni Pizza</h3>
+          <p>Pepperoni, mozzarella, tomato sauce, and oregano.</p>
+          <strong>$13</strong>
+        </article>
+        <article>
+          <h3>Fries and Drink Combo</h3>
+          <p>Crispy fries served with a cold soft drink.</p>
+          <strong>$5</strong>
+        </article>
+      </div>
+    </section>
+
+    <section class="details-grid">
+      <article>
+        <h2><i class="fa-solid fa-clock"></i> Working Hours</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Opening</th>
+              <th>Closing</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monday - Friday</td>
+              <td>10:00</td>
+              <td>22:00</td>
+            </tr>
+            <tr>
+              <td>Saturday - Sunday</td>
+              <td>11:00</td>
+              <td>23:00</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+      <article id="contact">
+        <h2><i class="fa-solid fa-location-dot"></i> Contact</h2>
+        <p>Address: Central Avenue 41, Istanbul</p>
+        <p>Phone: +90 555 000 0000</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>Stage 5 uses CSS Grid for the modern restaurant layout.</p>
+  </footer>
+</body>
+</html>

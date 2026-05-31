@@ -1,0 +1,57 @@
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: #fff5e5;
+  color: #2a1a15;
+  line-height: 1.55;
+}
+
+header {
+  background: #c8352b;
+  color: #fff8ea;
+}
+
+h1,
+h2 {
+  color: #23756f;
+  font-weight: 700;
+}
+
+header h1,
+header h2 {
+  color: #fff8ea;
+}
+
+a {
+  color: #f2bd45;
+  font-weight: 600;
+}
+
+section {
+  background: #fffaf0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+}
+
+th {
+  background: #23756f;
+  color: #ffffff;
+}
+
+td,
+th {
+  border: 1px solid #d5b58b;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+footer {
+  background: #2a1a15;
+  color: #fff8ea;
+}

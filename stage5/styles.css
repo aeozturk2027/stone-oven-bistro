@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  background: #fff5e5;
+  color: #2a1a15;
+  line-height: 1.6;
+}
+
+header {
+  display: grid;
+  grid-template-columns: minmax(260px, 1fr) minmax(260px, 520px);
+  gap: 24px;
+  align-items: end;
+  background: #c8352b;
+  color: #fff8ea;
+  padding: 34px 8vw;
+}
+
+header h1 {
+  margin: 0 0 10px;
+  font-size: clamp(2.1rem, 4vw, 4.6rem);
+  line-height: 1;
+}
+
+header p {
+  margin: 0;
+  max-width: 650px;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+a {
+  color: #f2bd45;
+  font-weight: 600;
+}
+
+nav a {
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 8px;
+  padding: 10px 12px;
+  text-decoration: none;
+}
+
+main {
+  width: min(1120px, 92vw);
+  margin: 30px auto;
+  display: grid;
+  gap: 22px;
+}
+
+section,
+.details-grid article {
+  background: #fffaf0;
+  border: 1px solid #e1c39b;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.9fr) minmax(300px, 1.1fr);
+  gap: 22px;
+  align-items: center;
+}
+
+.intro img {
+  width: 100%;
+  border: 6px solid #ffffff;
+  border-radius: 8px;
+}
+
+h2,
+h3 {
+  color: #23756f;
+  margin: 0 0 12px;
+}
+
+p {
+  margin: 0 0 12px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.menu-grid article {
+  min-height: 200px;
+  display: grid;
+  align-content: space-between;
+  background: #ffffff;
+  border: 1px solid #e4c8a6;
+  border-radius: 8px;
+  padding: 18px;
+}
+
+.menu-grid strong {
+  color: #c8352b;
+  font-size: 1.35rem;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(260px, 0.6fr);
+  gap: 22px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+}
+
+th {
+  background: #23756f;
+  color: #ffffff;
+}
+
+td,
+th {
+  border: 1px solid #d5b58b;
+  padding: 12px;
+  text-align: left;
+}
+
+footer {
+  background: #2a1a15;
+  color: #fff8ea;
+  padding: 18px 8vw;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  header,
+  .intro,
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  nav,
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+}
