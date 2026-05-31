@@ -2,6 +2,20 @@
 
 IST4130 restaurant website project prepared for Group 3.
 
+## Live Website
+
+GitHub repository:
+
+```text
+https://github.com/aeozturk2027/stone-oven-bistro
+```
+
+GitHub Pages live website:
+
+```text
+https://aeozturk2027.github.io/stone-oven-bistro/
+```
+
 ## Group Members
 
 - 22023606 - Muhammed Yusuf Özden
@@ -17,21 +31,8 @@ IST4130 restaurant website project prepared for Group 3.
 - Stage 6: JavaScript product selection, cart list, and total price updates
 - Stage 7: GitHub Pages deployment
 
-## GitHub Pages Deployment
+## Deployment Notes
 
-1. Create a GitHub repository for the project.
-2. Upload all files and folders from this project root.
-3. Open the repository settings on GitHub.
-4. Go to `Pages`.
-5. Select `Deploy from a branch`.
-6. Select the `main` branch and the `/root` folder.
-7. Save and wait for GitHub Pages to publish the site.
-8. Test the published URL before submission.
+The project is published with GitHub Pages from the `main` branch and the repository root folder. The live website link should be tested before submission to make sure all pages, images, and stage links work correctly.
 
-The live URL will use this format:
-
-```text
-https://<github-username>.github.io/<repository-name>/
-```
-
-Submit the compressed project archive (`.zip` or `.rar`) together with the live GitHub Pages link.
+For submission, include the compressed project archive (`.zip` or `.rar`) together with the live GitHub Pages link.
